@@ -1,0 +1,13 @@
+<h1>Speakers</h1>
+
+<% @speakers.each do |speaker| %>
+  <h2><%= speaker.name %></h2>
+  <p>About: <%= speaker.about %></p>
+  <ul>
+    <li>Twitter: <%= link_to("@#{speaker.twitter}", "http://www.twitter.com/#{speaker.twitter}") %></li>
+    <li>Github: <%= speaker.github %></li>
+    <li>Slides: <%= speaker.slides_url %></li>
+    <li>Website: <%= speaker.website_url %></li>
+    <li>Company: <%= speaker.company_name %> <%= speaker.company_url %></li>
+  </ul>
+<% end %>
