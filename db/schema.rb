@@ -11,17 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131028234440) do
+ActiveRecord::Schema.define(version: 20131029085125) do
 
   create_table "talks", force: true do |t|
     t.string   "title"
     t.string   "video_url"
-    t.string   "description"
+    t.text     "description"
     t.integer  "minutes"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.text     "speaker"
     t.date     "presented_on"
+    t.string   "slides_url"
+    t.string   "image_filename"
   end
 
 end
