@@ -13,6 +13,11 @@ group :production do
   gem 'pg'
 end
 
+# Use phantomjs and casperjs to take screenshots
+gem "phantomjs", "~> 1.8.1.1"
+gem "casperjs", "~> 1.0.0"
+
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 

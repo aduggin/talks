@@ -32,6 +32,15 @@ header {
   padding:20px;
  }
 
+@media only screen and (min-width : 768px) {
+  body {
+    font-size:1.2em;
+  }
+  .container {
+    max-width:700px;
+  }
+}
+
  nav {
   background:#eeeeee;
   margin:-20px -20px 20px -20px;
