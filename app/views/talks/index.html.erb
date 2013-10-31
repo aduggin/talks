@@ -1,8 +1,6 @@
 <h1>Talks</h1>
-
+<ul>
 <% @talks.each do |talk| %>
-  <h2><%= link_to(talk.title, talk.video_url) %> - <%= talk.speaker %></h2>
-  <p><%= talk.description %></p>
-  <div>Duration: <%= talk.minutes %> mins</div>
-  <div>Date added: <%= talk.created_at %></div>
+  <li><%= link_to(talk.title, "/talks/#{talk.id}") %> - <%= talk.speaker %></li>
 <% end %>
+<ul>

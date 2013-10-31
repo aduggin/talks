@@ -1,0 +1,17 @@
+<h1>Homepage</h1>
+
+<p>Learn from the best of in the industry.</p>
+
+<h2>Talks</h2>
+<ul>
+<% @talks.each do |talk| %>
+  <li><%= link_to(talk.title, "/talks/#{talk.id}") %></li>
+<% end %>
+</ul>
+
+<h2>Speakers</h2>
+<ul>
+<% @speakers.each do |speaker| %>
+  <li><%= link_to(speaker.name, "/speakers/#{speaker.id}") %></li>
+<% end %>
+</ul>

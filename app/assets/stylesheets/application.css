@@ -21,7 +21,13 @@ header {
   background:#cccccc;
   margin:-20px -20px 20px -20px;
   padding:20px;
+  overflow:hidden;
+}
+
+.SiteName {
+  float:left;
   font-size:2em;
+  zoom:1;
 }
 
 .container {
@@ -31,6 +37,7 @@ header {
   margin:0 auto;
   padding:20px;
  }
+
 
 @media only screen and (min-width : 768px) {
   body {
@@ -42,9 +49,7 @@ header {
 }
 
  nav {
-  background:#eeeeee;
-  margin:-20px -20px 20px -20px;
-  padding:0 20px;
+  float:right;
  }
  nav ul, 
  nav li {

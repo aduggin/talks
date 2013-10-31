@@ -10,14 +10,18 @@
 
 <div class="container">
   <header>
-    SomeName
-  </header>
-  <nav>
+    <div class="SiteName">
+      <%= link_to("SiteName", "/") %>
+    </div>
+    <nav>
     <ul>
       <li><%= link_to("Talks", "/talks") %></li>
       <li><%= link_to("Speakers", "/speakers") %></li>
     </ul>
   </nav>
+  </header>
+  
+
   <main>
   <%= yield %>
   </main>

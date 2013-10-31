@@ -4,4 +4,8 @@ class TalksController < ApplicationController
     @talks = Talk.all
   end
 
+  def show
+    @talk = Talk.find(params[:id])
+  end
+
 end
