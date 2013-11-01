@@ -13,12 +13,23 @@
  */
 
 
-@import "base/normalize";
 
+@import "global/variables";
+@import "global/functions";
+@import "global/mixins";
+@import "global/placeholders";
+
+@import "base/normalize";
+@import "base/fonts";
+@import "base/typography";
+@import "base/elements";
+
+@import "blocks/Icon";
+@import "blocks/Button";
+@import "blocks/SiteName";
 
 
 /* @TODO: move to new partials!! */
-
 body {
   background:#ddd;
   line-height:1.4;
@@ -31,48 +42,24 @@ header {
   overflow:hidden;
 }
 
-.SiteName {
-  float:left;
-  font-size:2em;
-  zoom:1;
-}
-
-.container {
-  background:#fff;
-  width:90%;
-  max-width:530px;
-  margin:0 auto;
-  padding:20px;
- }
-
-
-@media only screen and (min-width : 768px) {
-  body {
-    font-size:1.2em;
-  }
-  .container {
-    max-width:700px;
-  }
-}
-
- nav {
+nav {
   float:right;
- }
- nav ul, 
- nav li {
+}
+nav ul, 
+nav li {
   display:inline-block;
   padding:0;
   margin:0;
- }
- nav li {
+}
+nav li {
   padding:10px;
- }
+}
 
- footer {
+footer {
   background:#efefef;
   margin:0 -20px -20px -20px;
- }
- footer p {
+}
+footer p {
   margin:0;
   padding:20px;
- }
+}
