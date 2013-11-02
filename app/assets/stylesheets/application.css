@@ -9,57 +9,20 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
- *= require_tree .
  */
 
+@import 'global/_variables';
+@import 'global/_functions';
+@import 'global/_mixins';
+@import 'global/_placeholders';
 
+@import 'base/_normalize';
+@import 'base/_fonts';
+@import 'base/_typography';
+@import 'base/_elements';
 
-@import "global/variables";
-@import "global/functions";
-@import "global/mixins";
-@import "global/placeholders";
+@import 'blocks/_Icon';
+@import 'blocks/_Button';
+@import 'blocks/_SiteName';
 
-@import "base/normalize";
-@import "base/fonts";
-@import "base/typography";
-@import "base/elements";
-
-@import "blocks/Icon";
-@import "blocks/Button";
-@import "blocks/SiteName";
-
-
-/* @TODO: move to new partials!! */
-body {
-  background:#ddd;
-  line-height:1.4;
-}
-
-header {
-  background:#cccccc;
-  margin:-20px -20px 20px -20px;
-  padding:20px;
-  overflow:hidden;
-}
-
-nav {
-  float:right;
-}
-nav ul, 
-nav li {
-  display:inline-block;
-  padding:0;
-  margin:0;
-}
-nav li {
-  padding:10px;
-}
-
-footer {
-  background:#efefef;
-  margin:0 -20px -20px -20px;
-}
-footer p {
-  margin:0;
-  padding:20px;
-}
+@import 'layout/_layout';
