@@ -11,18 +11,18 @@
  *= require_self
  */
 
-@import 'global/_variables';
-@import 'global/_functions';
-@import 'global/_mixins';
-@import 'global/_placeholders';
+@import 'global/variables';
+@import 'global/functions';
+@import 'global/mixins';
+@import 'global/placeholders';
 
-@import 'base/_normalize';
-@import 'base/_fonts';
-@import 'base/_typography';
-@import 'base/_elements';
+@import 'base/normalize';
+@import 'base/fonts';
+@import 'base/typography';
+@import 'base/elements';
 
-@import 'blocks/_Icon';
-@import 'blocks/_Button';
-@import 'blocks/_SiteName';
+@import 'blocks/Icon';
+@import 'blocks/Button';
+@import 'blocks/SiteName';
 
-@import 'layout/_layout';
+@import 'layout/layout';
